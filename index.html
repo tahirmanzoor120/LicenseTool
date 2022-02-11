@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>License Tool</title>
+    <style>
+        button {
+            margin: 10px;
+            width: 150px;
+            height: 30px;
+        }
+
+        a {
+
+        }
+
+        table {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        table, th, td {
+        border: 1px solid black;
+        }
+
+        td {
+            text-align: center;
+            vertical-align: middle;
+            padding: 5px;
+        }
+
+        tr:hover {
+            background-color: yellow;
+        }
+
+        #add-license-div {
+            display: none;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <h1>License Tool</h1>
+
+    <button id='all-licenses-btn'>All Licenses</button>
+    <button id='add-license-btn'>Add License</button>
+
+    <div id='all-licenses-div'>
+    </div>
+
+    <div id='add-license-div'>
+        <h2>Add License</h2>
+        <table>
+            <tr>
+                <td>
+                    <label>Mobile Number</label>
+                </td>
+                <td>
+                    <input type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Device ID</label>
+                </td>
+                <td>
+                    <input type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Expiry Date</label>
+                </td>
+                <td>
+                    <input type="date" />
+                </td>
+            </tr>
+        </table>
+        <button id='add-license-btn'>Create License</button>
+    </div>
+   
+    <script src="main.js"></script>
+</body>
+
+</html>
